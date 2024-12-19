@@ -1,0 +1,13 @@
+{
+    "productos":[
+        {
+            "nombreProducto": "té",
+            "precio": 800,
+            "imagen":"",
+            "categoria": "Infusiones",
+            "descripcion_breve":"Un té común",
+            "descripcion_amplia": "Mas datos sobre el té común",
+            "id": "ab1"
+        }
+    ]
+}
