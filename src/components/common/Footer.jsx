@@ -1,9 +1,9 @@
 const Footer = () => {
-    return (
-        <div>
-            <h2>Esto es el footer</h2>
-        </div>
-    );
+  return (
+    <footer className="text-center bg-green text-light py-4">
+      <p>&copy; Todos los derechos reservados</p>
+    </footer>
+  );
 };
 
 export default Footer;
