@@ -37,7 +37,7 @@ Este proyecto fue creado para practicar las principales operaciones CRUD (**Crea
 
 3. Configura y ejecuta **json-server**:  
    ```bash  
-   npx json-server --watch db.json 
+   json-server --watch db.json
    ```  
 
 4. Inicia la aplicación React:  
@@ -66,8 +66,7 @@ rollingcoffee/
 
 ## 📷 Vista Previa  
 
-(Agrega capturas de pantalla de la aplicación aquí para mostrar el diseño y funcionalidad)  
-
+![localhost_5173_](https://github.com/user-attachments/assets/6e5606da-01ed-4b06-a67d-eda1a1564d09)
 
 ## 📝 Licencia  
 
