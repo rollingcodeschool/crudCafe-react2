@@ -3,10 +3,10 @@
     {
       "nombreProducto": "té",
       "precio": 800,
-      "imagen": "",
+      "imagen": "https://images.pexels.com/photos/1235706/pexels-photo-1235706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "Infusiones",
-      "descripcion_breve": "Un té común",
-      "descripcion_amplia": "Mas datos sobre el té común",
+      "descripcion_breve": "Infusión clásica y reconfortante, perfecta para acompañar tus momentos de calma. Disponible en variedades como negro, verde, y de hierbas.",
+      "descripcion_amplia": "Infusión clásica y reconfortante, perfecta para acompañar tus momentos de calma. Disponible en variedades como negro, verde, y de hierbas.",
       "id": "ab1"
     },
     {
@@ -14,8 +14,8 @@
       "precio": "800",
       "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "Infusiones",
-      "descripcion_breve": "cafe con descripcion breve",
-      "descripcion_amplia": "cafe con descripcion amplia",
+      "descripcion_breve": "Café intenso y aromático, ideal para disfrutar solo o con un toque de azúcar. Preparado con granos de alta calidad.",
+      "descripcion_amplia": "Café intenso y aromático, ideal para disfrutar solo o con un toque de azúcar. Preparado con granos de alta calidad.",
       "id": "ddiXlRP"
     },
     {
@@ -23,8 +23,8 @@
       "precio": "650",
       "imagen": "https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "Infusiones",
-      "descripcion_breve": "skldfj lskdjfsdf",
-      "descripcion_amplia": "sdfjskdl slkdfjsd lksdf lsdkfsdj",
+      "descripcion_breve": "El equilibrio perfecto entre la intensidad del café y la suavidad de un toque de leche. Un clásico que nunca falla.",
+      "descripcion_amplia": "El equilibrio perfecto entre la intensidad del café y la suavidad de un toque de leche. Un clásico que nunca falla.",
       "id": "lL80iHE"
     }
   ]
