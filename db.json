@@ -1,13 +1,22 @@
 {
-    "productos":[
-        {
-            "nombreProducto": "té",
-            "precio": 800,
-            "imagen":"",
-            "categoria": "Infusiones",
-            "descripcion_breve":"Un té común",
-            "descripcion_amplia": "Mas datos sobre el té común",
-            "id": "ab1"
-        }
-    ]
+  "productos": [
+    {
+      "nombreProducto": "té",
+      "precio": 800,
+      "imagen": "",
+      "categoria": "Infusiones",
+      "descripcion_breve": "Un té común",
+      "descripcion_amplia": "Mas datos sobre el té común",
+      "id": "ab1"
+    },
+    {
+      "nombreProducto": "café",
+      "precio": "800",
+      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Infusiones",
+      "descripcion_breve": "cafe con descripcion breve",
+      "descripcion_amplia": "cafe con descripcion amplia",
+      "id": "ddiXlRP"
+    }
+  ]
 }
