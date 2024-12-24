@@ -17,6 +17,15 @@
       "descripcion_breve": "cafe con descripcion breve",
       "descripcion_amplia": "cafe con descripcion amplia",
       "id": "ddiXlRP"
+    },
+    {
+      "nombreProducto": "Café cortado",
+      "precio": "650",
+      "imagen": "https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Infusiones",
+      "descripcion_breve": "skldfj lskdjfsdf",
+      "descripcion_amplia": "sdfjskdl slkdfjsd lksdf lsdkfsdj",
+      "id": "lL80iHE"
     }
   ]
 }

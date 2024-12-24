@@ -14,7 +14,12 @@ const FormularioProducto = () => {
   const onSubmit = async(producto) => {
       console.log(producto);
       const respuesta = await crearProductoAPI(producto)
-      console.log(respuesta)
+      if(respuesta.status === 201){
+        alert('El producto fue creado correctamente')
+        reset()
+      }else{
+        alert('Ocurrio un error, volve a intentar esta operacion en unos minutos') 
+      }
   };
 
   return (
