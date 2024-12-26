@@ -1,6 +1,8 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { crearProductoAPI } from "../../helpers/queries";
+import { crearProductoAPI, obtenerProductoAPI } from "../../helpers/queries";
+import { useParams } from "react-router";
+import { useEffect } from "react";
 
 
 const FormularioProducto = ({crearProducto}) => {
@@ -9,7 +11,31 @@ const FormularioProducto = ({crearProducto}) => {
     handleSubmit,
     formState: { errors },
     reset,
+    setValue
   } = useForm();
+  const {id} = useParams();
+
+  useEffect(()=>{
+    if(crearProducto === false){
+      cargarProducto();
+    }
+  },[])
+
+  const cargarProducto= async()=>{
+    //pedir a la api un producto
+    const respuesta = await obtenerProductoAPI(id)
+    if(respuesta.status===200){
+      //dibujar el producto en el form
+      const datos = await respuesta.json()
+      console.log(datos)
+      setValue('nombreProducto', datos.nombreProducto)
+      setValue('precio', datos.precio)
+      setValue('imagen', datos.imagen)
+      setValue('categoria', datos.categoria)
+      setValue('descripcion_breve', datos.descripcion_breve)
+      setValue('descripcion_amplia', datos.descripcion_amplia)
+    }
+  }
   
   const onSubmit = async(producto) => {
     if(crearProducto){
