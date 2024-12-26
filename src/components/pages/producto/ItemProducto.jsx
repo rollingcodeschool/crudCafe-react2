@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap";
 import { borrarProductoAPI, listarProductosAPI } from "../../helpers/queries";
+import { Link } from "react-router";
 
 const ItemProducto = ({producto, setListaProductos}) => {
 
@@ -32,9 +33,9 @@ const ItemProducto = ({producto, setListaProductos}) => {
       </td>
       <td>{producto.categoria}</td>
       <td className="text-center">
-        <Button variant="warning" className="me-lg-2">
+        <Link className="btn btn-warning me-lg-2" to={'/administrador/editar'}>
           <i className="bi bi-pencil-square"></i>
-        </Button>
+        </Link>
         <Button variant="danger" onClick={borrarProducto}>
           <i className="bi bi-trash"></i>
         </Button>

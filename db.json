@@ -17,6 +17,15 @@
       "descripcion_breve": "asda asdddddddddddddddddddd",
       "descripcion_amplia": "aaaaaaaaaaaaaaaaas aaaaaaaaaaaaaaaa",
       "id": 2
+    },
+    {
+      "nombreProducto": "café cortado",
+      "precio": "900",
+      "imagen": "https://pics.filmaffinity.com/maybe_i_do-982667296-large.jpg",
+      "categoria": "Infusiones",
+      "descripcion_breve": "asd asdasdasd",
+      "descripcion_amplia": "aaaaaaaaaaaaaaaasdasdasdasdasd",
+      "id": 3
     }
   ]
 }

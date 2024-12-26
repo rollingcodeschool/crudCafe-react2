@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { crearProductoAPI } from "../../helpers/queries";
 
 
-const FormularioProducto = () => {
+const FormularioProducto = ({crearProducto}) => {
   const {
     register,
     handleSubmit,
@@ -12,6 +12,7 @@ const FormularioProducto = () => {
   } = useForm();
   
   const onSubmit = async(producto) => {
+    if(crearProducto){
       console.log(producto);
       const respuesta = await crearProductoAPI(producto)
       if(respuesta.status === 201){
@@ -20,6 +21,9 @@ const FormularioProducto = () => {
       }else{
         alert('Ocurrio un error, volve a intentar esta operacion en unos minutos') 
       }
+    }else{
+      console.log('Aqui tengo que editar')
+    }
   };
 
   return (
