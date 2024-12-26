@@ -1,6 +1,6 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { crearProductoAPI, obtenerProductoAPI } from "../../helpers/queries";
+import { crearProductoAPI, editarProductoAPI, obtenerProductoAPI } from "../../helpers/queries";
 import { useParams } from "react-router";
 import { useEffect } from "react";
 
@@ -48,7 +48,13 @@ const FormularioProducto = ({crearProducto}) => {
         alert('Ocurrio un error, volve a intentar esta operacion en unos minutos') 
       }
     }else{
-      console.log('Aqui tengo que editar')
+      const respuesta = await editarProductoAPI(producto,id)
+      if(respuesta.status === 200){
+        alert('El producto fue actualizado')
+      //redireccionar a la pagina del administrador
+      } else{
+        alert('Ocurrio un error, volve a intentar esta operacion en unos minutos')
+      }
     }
   };
 
