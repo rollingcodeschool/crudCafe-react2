@@ -1,3 +1,22 @@
 {
-  "productos": []
+  "productos": [
+    {
+      "nombreProducto": "café",
+      "precio": "800",
+      "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "categoria": "Infusiones",
+      "descripcion_breve": "sdgsdf sdfs dfs",
+      "descripcion_amplia": "sssssssssssssssssssdf sdfsdfsdfsdfsdfsdfsdf",
+      "id": 1
+    },
+    {
+      "nombreProducto": "medialuna",
+      "precio": "200",
+      "imagen": "https://pics.filmaffinity.com/thor_love_and_thunder-566116133-large.jpg",
+      "categoria": "Dulce",
+      "descripcion_breve": "asda asdddddddddddddddddddd",
+      "descripcion_amplia": "aaaaaaaaaaaaaaaaas aaaaaaaaaaaaaaaa",
+      "id": 2
+    }
+  ]
 }
