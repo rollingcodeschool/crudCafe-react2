@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Inicio/>}/>
         <Route path='/login' element={<Login setUsuarioLogueado ={setUsuarioLogueado}/>}/>
-        <Route path='/detalle-producto' element={<DetalleProducto/>}/>
+        <Route path='/detalle-producto/:id' element={<DetalleProducto/>}/>
         <Route path='/administrador/*' element={<ProtectorRutas>
           <RutasAdmin></RutasAdmin>
         </ProtectorRutas>}/>
