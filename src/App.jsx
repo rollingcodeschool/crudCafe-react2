@@ -11,7 +11,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
 import DetalleProducto from './components/pages/DetalleProducto'
 import Login from './components/pages/Login'
+import { useState } from 'react'
 function App() {
+  const usuario = JSON.parse(sessionStorage.getItem('userKey')) || '';
+  const [usuarioLogueado, setUsuarioLogueado] = useState(usuario)
  
   return (
     <>
@@ -19,7 +22,7 @@ function App() {
      <Menu></Menu>
       <Routes>
         <Route path='/' element={<Inicio/>}/>
-        <Route path='/login' element={<Login/>}/>
+        <Route path='/login' element={<Login setUsuarioLogueado ={setUsuarioLogueado}/>}/>
         <Route path='/detalle-producto' element={<DetalleProducto/>}/>
         <Route path='/administrador' element={<Administrador/>}/>
         <Route exact path="/administrador/crear" element={<FormularioProducto crearProducto={true}></FormularioProducto>}></Route>

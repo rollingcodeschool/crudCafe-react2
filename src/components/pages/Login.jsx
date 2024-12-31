@@ -1,5 +1,7 @@
 import { useForm } from "react-hook-form";
 import { Button, Card, Container, Form, Row } from "react-bootstrap";
+import { login } from "../helpers/queries";
+import { useNavigate } from "react-router";
 
 const Login = ({setUsuarioLogueado}) => {
   const {
@@ -8,9 +10,16 @@ const Login = ({setUsuarioLogueado}) => {
     formState: { errors },
     reset,
   } = useForm();
+  const navegacion = useNavigate();
 
   const onSubmit = (usuario)=>{
-    console.log(usuario)
+   if(login(usuario)){
+    setUsuarioLogueado(usuario)
+    alert('Bienvenido');
+    navegacion('/administrador')
+   }else{
+    alert('Email o contraseña incorrecta')
+   }
   }
 
   return (
