@@ -14,7 +14,7 @@ const Login = ({setUsuarioLogueado}) => {
 
   const onSubmit = (usuario)=>{
    if(login(usuario)){
-    setUsuarioLogueado(usuario)
+    setUsuarioLogueado(usuario.email)
     alert('Bienvenido');
     navegacion('/administrador')
    }else{
