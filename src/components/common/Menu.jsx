@@ -3,13 +3,13 @@ import logo from "../../assets/Coffee_Logo.png";
 import { NavLink, Link, useNavigate } from "react-router";
 
 const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
-  const navegacion = useNavigate()
+  const navegacion = useNavigate();
 
- const logout = ()=>{
-  sessionStorage.removeItem('userKey');
-  setUsuarioLogueado('')
-  navegacion('/')
- }
+  const logout = () => {
+    sessionStorage.removeItem("userKey");
+    setUsuarioLogueado("");
+    navegacion("/");
+  };
 
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
@@ -33,7 +33,9 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
                 <NavLink end className="nav-link" to={"/administrador"}>
                   Administrador
                 </NavLink>
-                <Button className='nav-link' onClick={logout}>Logout</Button>
+                <Button className="nav-link" variant="link" onClick={logout}>
+                  Logout
+                </Button>
               </>
             ) : (
               <NavLink end className="nav-link" to={"/login"}>
