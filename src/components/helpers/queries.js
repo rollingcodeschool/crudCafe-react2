@@ -71,3 +71,18 @@ export const editarProductoAPI = async(productoEditado, id)=>{
         return false
     }
 }
+
+//usuario administrador
+const userAdmin ={
+    email:'admin@admin.com',
+    password: '12345678'
+}
+
+export const login = (usuario)=>{
+    if(usuario.email === userAdmin.email && usuario.password === userAdmin.password){
+        sessionStorage.setItem('userKey', JSON.stringify(userAdmin.email))
+        return true
+    }else{
+        return false
+    }
+}
