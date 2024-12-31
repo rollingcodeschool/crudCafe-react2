@@ -1,7 +1,7 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { crearProductoAPI, editarProductoAPI, obtenerProductoAPI } from "../../helpers/queries";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { useEffect } from "react";
 
 
@@ -14,6 +14,7 @@ const FormularioProducto = ({crearProducto}) => {
     setValue
   } = useForm();
   const {id} = useParams();
+  const navegacion = useNavigate();
 
   useEffect(()=>{
     if(crearProducto === false){
@@ -52,6 +53,7 @@ const FormularioProducto = ({crearProducto}) => {
       if(respuesta.status === 200){
         alert('El producto fue actualizado')
       //redireccionar a la pagina del administrador
+        navegacion('/administrador')
       } else{
         alert('Ocurrio un error, volve a intentar esta operacion en unos minutos')
       }

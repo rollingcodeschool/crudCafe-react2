@@ -11,8 +11,8 @@
     },
     {
       "nombreProducto": "medialuna",
-      "precio": "300",
-      "imagen": "https://pics.filmaffinity.com/thor_love_and_thunder-566116133-large.jpg",
+      "precio": "350",
+      "imagen": "https://images.pexels.com/photos/4828339/pexels-photo-4828339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "Dulce",
       "descripcion_breve": "asda asdddddddddddddddddddd",
       "descripcion_amplia": "aaaaaaaaaaaaaaaaas aaaaaaaaaaaaaaaa",
@@ -21,7 +21,7 @@
     {
       "nombreProducto": "café cortado",
       "precio": "900",
-      "imagen": "https://pics.filmaffinity.com/maybe_i_do-982667296-large.jpg",
+      "imagen": "https://images.pexels.com/photos/885021/pexels-photo-885021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "Infusiones",
       "descripcion_breve": "asd asdasdasd",
       "descripcion_amplia": "aaaaaaaaaaaaaaaasdasdasdasdasd",
