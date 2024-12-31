@@ -12,6 +12,9 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import DetalleProducto from './components/pages/DetalleProducto'
 import Login from './components/pages/Login'
 import { useState } from 'react'
+import ProtectorRutas from './components/routes/ProtectorRutas'
+import RutasAdmin from './components/routes/RutasAdmin'
+
 function App() {
   const usuario = JSON.parse(sessionStorage.getItem('userKey')) || '';
   const [usuarioLogueado, setUsuarioLogueado] = useState(usuario)
@@ -24,9 +27,9 @@ function App() {
         <Route path='/' element={<Inicio/>}/>
         <Route path='/login' element={<Login setUsuarioLogueado ={setUsuarioLogueado}/>}/>
         <Route path='/detalle-producto' element={<DetalleProducto/>}/>
-        <Route path='/administrador' element={<Administrador/>}/>
-        <Route exact path="/administrador/crear" element={<FormularioProducto crearProducto={true}></FormularioProducto>}></Route>
-        <Route exact path="/administrador/editar/:id" element={<FormularioProducto crearProducto={false}></FormularioProducto>}></Route>
+        <Route path='/administrador/*' element={<ProtectorRutas>
+          <RutasAdmin></RutasAdmin>
+        </ProtectorRutas>}/>
         <Route path='*' element={<Error404/>}/>
       </Routes>
       <Footer></Footer>
