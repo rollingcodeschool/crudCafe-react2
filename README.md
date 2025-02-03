@@ -6,6 +6,10 @@
 
 Este proyecto fue creado para practicar las principales operaciones CRUD (**Create, Read, Update, Delete**) utilizando una API falsa proporcionada por **json-server**. Además, trabajamos con maquetado utilizando **React-Bootstrap** y configuramos la navegación entre vistas con **React Router**.  
 
+## Demo
+
+Podes usar una demo del proyecto [aqui](https://rolling-coffee-r2.netlify.app/) 
+
 ## 🛠️ Tecnologías Utilizadas  
 
 - **React** ⚛️  
@@ -26,7 +30,7 @@ Este proyecto fue creado para practicar las principales operaciones CRUD (**Crea
 
 1. Clona este repositorio:  
    ```bash  
-   git clone https://github.com/tuusuario/rollingcoffee.git  
+   git clone https://github.com/rollingcodeschool/rollingcoffee.git  
    cd rollingcoffee  
    ```  
 
